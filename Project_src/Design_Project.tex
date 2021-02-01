@@ -9,6 +9,7 @@
 \usepackage{xcolor}  % colored text
 \usepackage{titlesec}  % custom section headings and subsubsections
 \usepackage{enumitem}  % custom lists
+\usepackage[numbers]{natbib}  % IEEE citation style
 
 \definecolor{psublue}{RGB}{0,51,175}
 \definecolor{navy}{RGB}{23, 42, 86}
@@ -65,7 +66,7 @@
 \pagenumbering{arabic}
 \section{Introduction}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua \cite{Sutton:18}. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{MathWorksRLToolbox}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{Emami:16}. Excepteur sint occaecat cupidatat non proident \cite{Boyd:03}, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{Sato:19}.
 
 %\begin{figure}[!htb]
 %    \center{\includegraphics[width=5in]{conops}}
@@ -88,7 +89,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 \subsection{Spacecraft Overview}
-Each of the subsystems from the block diagram are further specified in Table \ref{tab:budget}, which shows the cost and weight of each. This total estimated weight of the quadcopter excludes the weight of wiring and connectors. Note that the weight of the the RF transmitter is not counted in the total weight because it is a hand-held remote that is not installed on the quadcopter.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{Mass}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -298,6 +299,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \section{Lessons Learned}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{IEEEtraN}
+\bibliography{References}
+% TODO: references may need to be in two columns
 
 
 \end{document}
